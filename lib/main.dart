@@ -324,6 +324,7 @@ class _PortfolioHomeState extends State<PortfolioHome> {
               'Manage and troubleshoot CCTV systems.',
               'Manage and troubleshoot IP PABX telephone systems.',
               'Manage company Google Workspace.',
+              'Manage ISO documentation and ensure compliance with established company policies and procedures.',
               'Troubleshoot and repair computers, laptops, routers, switches, IP telephones and printers.',
               'Develop systems to meet company requirements.',
             ],
