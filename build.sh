@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-git clone https://github.com/flutter/flutter.git --depth 1 -b stable "$HOME/flutter"
+git clone https://github.com/flutter/flutter.git -b stable --depth 1 "$HOME/flutter"
 export PATH="$HOME/flutter/bin:$PATH"
 
-flutter --version
+flutter config --enable-web
 flutter pub get
-flutter build web
-
-test -f build/web/index.html
+flutter build web --release
